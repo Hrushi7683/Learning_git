@@ -1,0 +1,79 @@
+firstly download the git on your system (search on google if u dont know)
+
+after downloading check the version of git and if its not latest then download the latest one.
+
+After that you can create config's as per your requierments 
+
+
+
+Git comes with a tool called git config that lets you configure variables that control all the aspects of how git will operate.
+
+git config holds its value between upgrades. So, you need to set it only once.
+
+Basically, there are 3 places to store these variables:
+
+   1) System.
+   2) Global.
+   3) Local.
+
+1. System: These variables are available for every user in the system and stored in
+
+[path]/etc/gitconfig.
+Example: C:/Program Files/Git/etc/gitconfig
+
+You can make git read and write from System by passing --system as option. It also requires you to have administration permissions.
+
+2. Global: Global configurations are available for the current user for all the projects and stored in
+
+~/.gitconfig or ~/.config/git/config
+Example: C:/Users/Username/.gitconfig
+
+You can make git to read and write from Global by passing --global option.
+
+3. Local: Local configs are available for the current repository only and stored in
+
+[gitrepo]/.git/config
+Example: C:/Users/MyProject/.git/config
+
+You can make git read and write from Local by passing --local option.
+Example:
+
+Create a local config
+$ git config --local user.name "Local User"
+
+# Create a global config
+$ git config --global user.name "Global User"
+
+# Create a system config
+$ sudo git config --system user.name "System User"
+
+to verify the origin of your configuration :
+
+git config --list --show-origin
+
+Also, its important to remember each level overrides values the previous level.
+
+Priority:
+
+Local > Global > System
+
+SO IN THIS WAY YOU CAN SET THE YOUR NAME AND EMAIL , IT WILL HELP TO IDENTIFY WHO MADE THE COMMIT IN PROJECT . 
+
+                           ...THANK YOU...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
