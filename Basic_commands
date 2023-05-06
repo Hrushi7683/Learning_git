@@ -1,0 +1,18 @@
+1 : git init 
+used to give the control of folder to the git , so it can track  each activity made by developers 
+
+2 : git add <file name> / git add . 
+used to add the file in staging area / that . can add all files available in that folder  
+
+3: git commit -m "can paas note about commit "
+used to commit the changes to fixed part pf memory , and to leave footprintsfor other traveller so they can see when , what change has been made  
+
+4 : git log
+used to see the different footprints id's 
+
+
+
+
+
+
+used to travle in time with different footprint id , with that is we can reach that perticular time stamp 

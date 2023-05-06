@@ -1,0 +1,22 @@
+So basically there are 3 areas where file can lives .
+
+1)working area 
+2)staging area
+3)Repository/Commit area
+
+to check what kind of differences made between working area and staging area
+use thr following command 
+
+-->git diff
+
+to check what kind of differences made between staging area and repo area 
+use the following command 
+
+-->git diff --staged
+
+to check the diff between working and repo area we use the following command
+
+-->git diff Head
+
+
+
