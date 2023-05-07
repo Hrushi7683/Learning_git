@@ -1,0 +1,34 @@
+How git stores the data
+
+It stores the data in form of keys and values , values are nothing but the content of file and keys are calculated by git this keys are nothing but hash values nad this hash values are calculated by git using SHA1 algorithm
+
+every commit has its own hash/SHA1 value.
+SHA1 is 20 digit hexadecimal value.
+With every commit 3 other files are created , which are linked to each other.
+and those files starts with the first two digits of that hash-code
+
+You can check the referencing by following command
+
+git cat-file <hash-code> -p
+
+you are able to see 4 things as you pass the commit code first time in above command
+1)Author
+2)Commiteer
+3)tree hash code
+4)commit message that you have passed
+
+After that you have to pass this tree hash code in the above command then you are able see 2 things
+1)blob hash code
+2)file name (for which commit has been made)
+
+After that for last time you have to pass this blob hash cod in command and then you will see the magic
+
+COTENT OF FILE WHEN COMMIT HAS BEEN DONE
+
+
+
+
+
+
+
+
